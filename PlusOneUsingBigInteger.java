@@ -21,6 +21,8 @@ public class PlusOneUsingBigInteger {
       BigInteger one = new BigInteger("1");
       reallyBig = reallyBig.add(one);
       
+      // Lots of conversion to and from
+      // made the program an inefficient one
       String res = String.valueOf(reallyBig);
       
       for (i=0; i< res.length(); i++) {
