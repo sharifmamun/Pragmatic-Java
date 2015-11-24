@@ -25,5 +25,5 @@ public class StringZigzag {
     }
 
     return result;
-	}
+  }
 }
