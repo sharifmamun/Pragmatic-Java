@@ -2,11 +2,13 @@ import java.util.*;
 import java.io.*;
 
 public class MaxPairwiseProduct {
+    // long ret type and arguments are added later
     static long getMaxPairwiseProduct(long[] numbers) {
         long result = 0;
         int n = numbers.length;
         for (int i = 0; i < n; ++i) {
             for (int j = i + 1; j < n; ++j) {
+                // long fixes the integer overflow problem here!
                 if (numbers[i] * numbers[j] > result) {
                     result = numbers[i] * numbers[j];
                 }
